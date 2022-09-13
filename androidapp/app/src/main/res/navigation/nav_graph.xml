@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingFragment">
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.imagediff.view.ui.LandingFragment"
+        android:label="Image"
+        tools:layout="@layout/fragment_landing">
+
+        <action
+            android:id="@+id/landingToDialog"
+            app:destination="@id/navigation_dialog_fragment"
+            app:enterAnim="@android:anim/linear_interpolator" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/navigation_dialog_fragment"
+        android:name="com.example.imagediff.view.ui.ImageDetails"
+        tools:layout="@layout/image_details">
+        <argument
+            android:name="uri"
+            app:argType="android.net.Uri" />
+        <action
+            android:id="@+id/dialogToResult"
+            app:destination="@id/imageResultFragment" />
+        <action
+            android:id="@+id/dialogToError"
+            app:destination="@id/errorFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/imageResultFragment"
+        android:name="com.example.imagediff.view.ui.ImageResultFragment"
+        android:label="Image"
+        tools:layout="@layout/fragment_image_result">
+        <argument
+            android:name="url"
+            app:argType="string" />
+        <argument
+            android:name="uri"
+            app:argType="android.net.Uri" />
+        <action
+            android:id="@+id/action_imageResultFragment_to_landingFragment"
+            app:destination="@id/landingFragment"
+            app:popUpTo="@id/landingFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.example.imagediff.ErrorFragment"
+        android:label="Error"
+        tools:layout="@layout/fragment_error">
+        <argument
+            android:name="message"
+            app:argType="string" />
+        <argument
+            android:name="errorCode"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_errorFragment_to_landingFragment"
+            app:destination="@id/landingFragment"
+            app:popUpTo="@id/landingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentFragment"
+        android:name="com.example.imagediff.RecentFragment"
+        android:label="Recent"
+        tools:layout="@layout/fragment_recent" >
+        <action
+            android:id="@+id/action_recentFragment_to_navigation_dialog_fragment"
+            app:destination="@id/navigation_dialog_fragment" />
+        <action
+            android:id="@+id/action_recentFragment_to_imageResultFragment"
+            app:destination="@id/imageResultFragment" />
+    </fragment>
+</navigation>

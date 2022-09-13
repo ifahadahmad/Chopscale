@@ -1,0 +1,109 @@
+
+
+.optionContainer{
+    background-color: #f1f5f9;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 25rem;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.imageContainer{
+
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 30px;
+}
+#optionimg{
+    display: block;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.options{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+
+}
+
+
+.options button{
+
+    background-color: #8b5cf6;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius:6px;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    margin: 20px;
+}
+@media only screen and (max-width: 750px) {
+    .imageContainer{
+        max-width: 400px;
+        max-height: 400px;
+
+    }
+    #optionimg{
+        min-width:300px;
+        min-height: 300px;
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .imageContainer{
+        max-width: 90%;
+        max-height: 90%;
+
+    }
+    #optionimg{
+        min-width:70%;
+        min-height: 70%;
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .imageContainer{
+        max-width: 95%;
+        max-height: 95%;
+
+    }
+    #optionimg{
+        min-width:88%;
+        min-height: 88%;
+        max-width: 95%;
+        max-height: 95%;
+    }
+    .options{
+        flex-direction: column;
+        
+    }
+    .options button{
+        margin: 8px;
+    }
+}
+.shimmer {
+    color: grey;
+    display:inline-block;
+    -webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 2.5s infinite;
+    font-size: 50px;
+    max-width:500px;
+  }
+  
+  @keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }

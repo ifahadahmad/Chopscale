@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/landingFragment"
+        android:title="Home"
+        android:icon="@drawable/home_icon_foreground"/>
+    <item
+        android:id="@+id/recentFragment"
+        android:title="Recent"
+        android:icon="@drawable/recent_icon_foreground"/>
+</menu>
