@@ -34,11 +34,11 @@
 
 ![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/app.gif)   
 
-![alt text](https://github.com/twoabd/CompressioAPI/blob/main/api/docs/api/default.png?raw=true)  
+![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/remove.gif)  
 
-![alt text](https://github.com/twoabd/CompressioAPI/blob/main/api/docs/api/lossy.png?raw=true)  
+![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/upscale.gif)  
  
-![alt text](https://github.com/twoabd/CompressioAPI/blob/main/api/docs/api/lossless.png?raw=true) 
+
 
 
 ## How to Use API
