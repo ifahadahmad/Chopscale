@@ -32,13 +32,12 @@
 
 ## Screenshots
 
-![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/app.gif)   
 
 ![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/remove.gif)  
 
 ![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/upscale.gif)  
  
-
+![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/app.gif)   
 
 
 ## How to Use API
