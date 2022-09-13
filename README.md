@@ -32,7 +32,7 @@
 
 ## Screenshots
 
-![alt text](https://github.com/twoabd/CompressioAPI/blob/main/api/docs/website/first.png?raw=true)   
+![alt text](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/docs/app.gif)   
 
 ![alt text](https://github.com/twoabd/CompressioAPI/blob/main/api/docs/api/default.png?raw=true)  
 
