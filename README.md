@@ -12,7 +12,7 @@
 
 ## Website
 
-[ChopScale](http://34.124.139.56/)
+[ChopScale](https://chopscale.co.in/)
 
 ## Android
 [ChopScale](https://github.com/ifahadahmad/chopscale/blob/master/androidapp/app/release/chopscale.apk?raw=true)
